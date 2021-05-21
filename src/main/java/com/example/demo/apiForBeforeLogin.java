@@ -38,6 +38,11 @@ public class apiForBeforeLogin {
 	@Autowired
 	private qadetailsRepository qarep;
 	
+	@RequestMapping("/")
+	public String getHello() {
+		return "HELLO";
+	}
+	
 	@RequestMapping("/login")
 	public String checklogindetails(@RequestParam String name,@RequestParam String password) throws Exception {
 		
